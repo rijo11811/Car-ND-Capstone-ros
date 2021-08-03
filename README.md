@@ -3,12 +3,7 @@
 
 This is the final project for the Udacity Self-Driving Car Engineer Nanodegree.  In this project, our team created several ROS nodes to implement core functionality of an autonomous vehicle.  For more information about the project, see the project introduction [here](https://classroom.udacity.com/nanodegrees/nd013/parts/6047fe34-d93c-4f50-8336-b70ef10cb4b2/modules/e1a23b06-329a-4684-a717-ad476f0d8dff/lessons/462c933d-9f24-42d3-8bdc-a08a5fc866e4/concepts/5ab4b122-83e6-436d-850f-9f4d26627fd9).
 
-[//]: # (Image References)
-[image1]: imgs/carla_architecture.PNG
-[image2]: imgs/rosgraph.png
-[image3]: imgs/system_architecture.png
-[image4]: imgs/driv1.png
-[image5]: imgs/stop.jpg
+
 
 ![Drive](/imgs/driv1.PNG)
 ![Stop](/imgs/stop.PNG)
@@ -143,9 +138,9 @@ This section will discuss node design in detail
 
 #### Waypoint Updater
 This node performes following tasks:
-Maintaining a list of waypoints ahead of the car: the car subscribes to a /base_)waypoints topic which is the list of complete waypoints the car has to traverse. It also subscribes to the position of the car. Using these values this node populates the list of waypoints ahead. In order to reduce latency this list has a size of 50.
+Maintaining a list of waypoints ahead of the car : the car subscribes to a /base_)waypoints topic which is the list of complete waypoints the car has to traverse. It also subscribes to the position of the car. Using these values this node populates the list of waypoints ahead. In order to reduce latency this list has a size of 50.
 
-Updating the velocity of the waypoints ahead of the car:this node also receives the position of the traffic light stop line point ahead of the car. If this point lies in the path of the car, it progressively increases braking(Uniform deceleration of velocity) and comes to a complete stop at the stop line. 
+Updating the velocity of the waypoints ahead : This node receives the position of the traffic light stop line point ahead of the car. If this point lies in the path of the car, it progressively increases braking(Uniform deceleration of velocity) and comes to a complete stop at the stop line. 
 
 #### Traffic Light Detection
 The udacity capstone project simulator transmits the state of all the traffic lights. The tl_detector node subscribes to this message and the list of all the waypoints the car has to traverse and publishes the index of the waypoint which is closest to a red traffic light ahead of the vehicle.
