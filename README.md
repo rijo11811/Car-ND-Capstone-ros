@@ -142,8 +142,8 @@ With the subscribed information of the traffic light detector and the subscripti
 This section will discuss node design in detail
 
 #### Waypoint Updater
-This node performed following tasks:
-Maintaining a list of waypoints ahead of the car: the car subscribes to a /base_)waypoints topic which is the list of complete waypoints the car has to traverse. It also subscribes to the position of the car. Using these values this node populates the list of waypoints ahead. In order to reduce latency this list has a size of 50. 
+This node performes following tasks:
+Maintaining a list of waypoints ahead of the car: the car subscribes to a /base_)waypoints topic which is the list of complete waypoints the car has to traverse. It also subscribes to the position of the car. Using these values this node populates the list of waypoints ahead. In order to reduce latency this list has a size of 50.
 
 Updating the velocity of the waypoints ahead of the car:this node also receives the position of the traffic light stop line point ahead of the car. If this point lies in the path of the car, it progressively increases braking(Uniform deceleration of velocity) and comes to a complete stop at the stop line. 
 
