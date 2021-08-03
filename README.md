@@ -10,8 +10,8 @@ This is the final project for the Udacity Self-Driving Car Engineer Nanodegree. 
 [image4]: imgs/driv1.png
 [image5]: imgs/stop.jpg
 
-![Drive](/imgs/driv1.png)
-![Stop](/imgs/stop.jpg)
+![Drive](/imgs/driv1.PNG)
+![Stop](/imgs/stop.PNG)
 
 
 ## Setup
