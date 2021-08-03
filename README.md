@@ -5,13 +5,13 @@ This is the final project for the Udacity Self-Driving Car Engineer Nanodegree. 
 
 [//]: # (Image References)
 [image1]: imgs/carla_architecture.PNG
-[image2]: imgs/rosgraph.jpg
+[image2]: imgs/rosgraph.png
 [image3]: imgs/system_architecture.png
 [image4]: imgs/driv1.png
 [image5]: imgs/stop.jpg
 
-![][image4]
-![][image5]
+![][image4](imgs/driv1.png)
+![][image5](imgs/stop.jpg)
 
 
 ## Setup
