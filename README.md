@@ -126,7 +126,7 @@ The ROS Architecture consists of different nodes that communicate with each othe
 
 The styx_server links the simulator and ROS by providing information about the car's state and surroundings (car's current position, velocity and images of the front camera) and receiving control input (steering, braking, throttle). The other nodes can be associated with the three central tasks Perception, Planning and Control. 
 
-In this project, I have used the traffic light state messages from the simulator to implement traffic light detectors in the car. A good addition to this would be the implication of a neural network which detects traffic lights and their states from the camera images. 
+In this project, I have used the traffic light state messages from the simulator to implement traffic light detector in the car. An improvement to this would be to implement a neural network which detects traffic lights and their states from the camera images. 
 
 With the subscribed information of the traffic light detector and the subscriptions to base waypoints, the waypoint updater node is able to plan acceleration / deceleration and publish it to the waypoint follower node. This node publishes to the DBW (Drive by wire) which steers the car autonomously. It also takes as input the car's current velocity and outputs steering, braking and throttle commands. 
 
