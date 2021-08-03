@@ -94,7 +94,9 @@ roslaunch launch/site.launch
 ### Carla Architecture
 Carla is the custom Lincoln MKZ that Udacity has converted into a self-driving car.  It's self-driving system is broken down into four major sub-systems: **Sensors**, **Perception**, **Planning** and **Control** 
 
-![][image1]
+
+![Architecture](/imgs/carla_architecture.PNG)
+
 
 #### Sensors
 Sensor pack consists of **cameras**, **lidar**, **GPS**, **radar**, and **IMU**
@@ -125,7 +127,7 @@ The control component takes trajectory outputs and processes them with a control
 
 The ROS Architecture consists of different nodes that communicate with each other through ROS messages. The nodes and their communication with each other are depicted in the picture below.
 
-![][image2]
+![ROS Architecture](/imgs/rosgraph.png)
 
 The styx_server links the simulator and ROS by providing information about the car's state and surroundings (car's current position, velocity and images of the front camera) and receiving control input (steering, braking, throttle). The other nodes can be associated with the three central tasks Perception, Planning and Control. 
 
@@ -135,7 +137,7 @@ With the subscribed information of the traffic light detector and the subscripti
 
 ### Node Design
 
-![][image3]
+![system_architecture](/imgs/system_architecture.PNG)
 
 This section will discuss node design in detail
 
