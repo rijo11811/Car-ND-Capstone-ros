@@ -151,7 +151,8 @@ The third node written by us is the dbw_node which is responsible for steering t
 
 ## Results
 
-The car completed one lap inside the simulator without any issues.
+The car completed more than one lap inside the simulator without any issues.
+
 
 
 
